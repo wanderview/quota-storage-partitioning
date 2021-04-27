@@ -13,16 +13,33 @@ March, 2021
 
 ## Participate
 
-
-
-*   [Issue tracker] TODO
-*   [Discussion forum] TODO
-
+*   [Issue Tracker](https://github.com/wanderview/quota-storage-partitioning/issues)
+*   [Discussion Forum](https://github.com/wanderview/quota-storage-partitioning/discussions)
 
 ## Table of Contents
 
-TODO during markdown conversion
-
+* [Introduction](#introduction)
+* [Goals](#goals)
+* [Non-Goals](#non-goals)
+* [General API Approach](#general-api-approach)
+* [Storage APIs](#storage-apis)
+* [Communication APIs](#communication-apis)
+* [ServiceWorker API](#serviceworker-api)
+* [Interaction With Extension Pages](#interaction-with-extension-pages)
+* [Key Scenarios](#key-scenarios)
+  * [Communication Between Embeds on Different Top Sites](#communication-between-embeds-on-different-top-sites)
+  * [Service Worker Controlled Iframes](#service-worker-controlled-iframes)
+  * [Composability of the Web](#composability-of-the-web)
+  * [Offline Support in 3rd Party Contexts](#offline-support-in-3rd-party-contexts)
+* [Considered Alternatives](#considered-alternatives)
+  * [Blocking APIs](#blocking-apis)
+  * [Making APIs Ephemeral](#making-apis-ephemeral)
+  * [First-Party Set Partition Key](#first-party-set-partition-key)
+  * [Separate Partitioned API Entrypoint](#separate-partitioned-api-entrypoint)
+  * [Escape Hatch to 1st Party Storage Access](#escape-hatch-to-1st-party-storage-access)
+* [Privacy & Security Considerations](#privacy--security-considerations)
+* [Stakeholder Feedback / Opposition](#stakeholder-feedback--opposition)
+* [References & Acknowledgements](#references--acknowledgements)
 
 ## Introduction
 
