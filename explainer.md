@@ -244,7 +244,7 @@ Storage partitioning is also an effort ongoing in the privacycg.  While we refer
 External References:
 
 *   [privacycg partitioning explainer](https://github.com/privacycg/storage-partitioning)
-*   [CHIPS explainer](https://www.google.com/url?q=https://github.com/DCtheTall/CHIPS&sa=D&source=editors&ust=1619481587234000&usg=AOvVaw2HZVQkc-tHJ95fUwtzIVkO)
+*   [CHIPS explainer](https://github.com/DCtheTall/CHIPS)
 *   https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin\_policy
 *   https://github.com/privacycg/first-party-sets/blob/main/README.md
 *   https://github.com/privacycg/first-party-sets/issues/35
