@@ -250,6 +250,8 @@ As discussed above this main focus of this proposal is to improve the privacy an
 
 Tableau has provided feedback in a [privacycg storage-partitioning issue](https://github.com/privacycg/storage-partitioning/issues/21) that partitioning seems to work well so far for their 3rd party use case; embedded analytics.
 
+AMP currently uses a 3rd party iframe to preload assets, like a [service worker](https://amp.dev/documentation/examples/components/amp-install-serviceworker/), when a page is served from the AMP cache.  This will break with the proposed partitioning.  Preloading across the origin boundary will likely require a separate, targeted API.
+
 We expect additional stakeholder feedback to be shared after publishing the explainer.  It will be added here when available.
 
 ## References & acknowledgements
@@ -276,6 +278,7 @@ External References:
 *   https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Privacy/State\_Partitioning
 *   https://github.com/w3c/FileAPI/issues/153
 *   https://github.com/privacycg/storage-partitioning/issues/21
+*   https://amp.dev/documentation/examples/components/amp-install-serviceworker/
 
 Many thanks for valuable feedback and advice from:
 
