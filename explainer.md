@@ -1,4 +1,4 @@
-# Explainer - Partitioning Storage, Service Workers, and More
+# Explainer - Partitioning Storage, Service Workers, and Communication APIs
 
 March, 2021
 
