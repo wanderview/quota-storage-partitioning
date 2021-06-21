@@ -116,7 +116,7 @@ Partitioning will apply to all non-cookie storage:
 
 
 
-*   **Quota**: The quota system must manage each partition as a separate bucket for determining how much space is permitted and when it should be cleared. This also includes APIs that give information on quota to the website, such as **navigator.storage.estimate()**, and Chrome-only deprecated versions of this such as **window.webkitStorageInfo** and **navigator.webkitTemporaryStorage**.
+*   **Quota**: The quota system must manage each partition as a separate bucket for determining how much space is permitted and when it should be cleared. This also includes APIs that give information on quota to the website, such as **navigator.storage.estimate()**. The legacy Chrome-only deprecated versions of this such as **window.webkitStorageInfo** and **navigator.webkitTemporaryStorage** will be deprecated and removed instead (see below).
 *   **IndexedDB:** A simple quota-managed storage API.
 *   **Cache API:** A simple quota-managed storage API.
 *   **localStorage** and **sessionStorage**, are not currently quota-managed, but should still be partitioned.
@@ -131,7 +131,7 @@ Additionally there are a couple of storage APIs we will treat slightly different
 *   The **blob url store** could be used as a limited communication mechanism as well. Though rather than partitioning this by top-level site, we will partition this by agent cluster with an exception to still allow navigation in a top-level browser context to any blob URL, as discussed in [w3c/FileAPI#153](https://github.com/w3c/FileAPI/issues/153).
 *   **AppCache** is in the process of being removed completely, so no further work is planned for it.
 *   **WebSQL** is a Chrome-only API, scheduled for eventual deprecation and removal. Rather than investing in partitioning, we propose to complete the removal for this API in at least 3rd party contexts.
-
+*   The same applies to **legacy quota APIs** such as **window.webkitStorageInfo**, **navigator.webkitTemporaryStorage**, and **navigator.webkitPersistentStorage**. Rather than investing in partitioning, we propose to remove these APIs in at least 3rd party contexts.
 
 ## Communication APIs
 
